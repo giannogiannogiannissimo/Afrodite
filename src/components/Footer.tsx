@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import sfondo from "@/assets/backgrounds/footer.png";
-import immagine_footer from "@/assets/backgrounds/immagine_footer.png";
+import immagine_footer from "@/assets/backgrounds/Immagine_footer.png";
 
 
 const Footer: React.FC = () => {
