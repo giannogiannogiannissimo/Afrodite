@@ -8,7 +8,8 @@
     "build": "vite build",
     "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "npm install --legacy-peer-deps && vite build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
