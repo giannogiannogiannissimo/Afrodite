@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     <section
       id="contact"
       ref={ref}
-      className={`mt-32 py-16 px-4 translate-y-6 ease-out
+      className={`mt-10 contact-tablet:mt-32 py-16 px-4 translate-y-6 ease-out
         animate-entrata-fade duration-[1000ms] delay-[1000ms] opacity-0 ${ isVisible ? "opacity-100" : ""}`}
     >
       {/* Titolo */}
