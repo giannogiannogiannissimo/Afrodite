@@ -1,0 +1,160 @@
+
+.card{
+  background: #015C7C;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, white);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 6px;
+  border-radius: 10px;
+  animation: 3s spin_ring linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin_ring{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+@media (min-width: 800px) {
+  .loader1 {
+    position: absolute;
+    /* più grande della foto per sembrare cornice */
+    width: 272px;
+    height: 272px;
+
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    
+    /* centratura */
+    top: 50%;
+    left:0%;
+    transform: translateY(-50%);
+
+    animation: spin 10s linear infinite;
+  }
+}
+
+
+@media (min-width: 800px) {
+/* Glow */
+  .loader1::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #015C7C;
+  }
+}
+
+@keyframes spin {
+  0%   { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+@media (min-width: 800px) {
+  .loader2 {
+    position: absolute;
+    /* più grande della foto per sembrare cornice */
+    width: 272px;
+    height: 272px;
+
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    
+    /* centratura */
+    top: 50%;
+    right:0%;
+    transform: translateY(50%);
+
+    animation: spin 10s linear infinite;
+  }
+}
+@media (min-width: 800px) {
+  /* Glow */
+  .loader2::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #015C7C;
+  }
+}
+
+@keyframes spin {
+  0%   { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+@media (max-width: 800px) {
+  .loader3 {
+    position: absolute;
+    /* più grande della foto per sembrare cornice */
+    width: 272px;
+    height: 272px;
+
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    
+    /* centratura */
+    top:0%;
+    left:50%;
+    
+    /*bottom: 50%;
+    right:50%;
+    transform: translate(-50%, 50%);*/
+    transform: translateX( -50%);
+    animation: 10s linear infinite;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Glow */
+  .loader3::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #015C7C;
+  }
+}
+
+@keyframes spin {
+  0%   { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
