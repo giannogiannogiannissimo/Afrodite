@@ -863,9 +863,6 @@
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\@\/assets\/backgrounds\/pattern\.png\'\)\] {
-    background-image: url('@/assets/backgrounds/pattern.png');
-  }
   .bg-\[url\(\'\@\/assets\/backgrounds\/sfondo\.png\'\)\] {
     background-image: url('@/assets/backgrounds/sfondo.png');
   }
