@@ -4,7 +4,13 @@ import sfondo from "@/assets/backgrounds/footer.png";
 import immagine_footer from "@/assets/backgrounds/Immagine_footer.png";
 
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  setShowPolicy: (value: "privacy" | "cookie" | null) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ setShowPolicy }) => {
+  
+
   return (
     <footer className="relative font-body text-white h-1/3">
       <img
@@ -27,8 +33,20 @@ const Footer: React.FC = () => {
         {/* Policy + Social */}
         <div className="flex flex-col text-lef items-start md:items-end gap-4 m-4 z-10">
           <div className="flex gap-4 text-left">
-            <a href="#" className="hover:text-gray-200">Privacy</a>
-            <a href="#" className="hover:text-gray-200">Cookie Policy</a>
+            <button
+              type="button"
+              onClick={() => setShowPolicy("privacy")}
+              className="hover:text-gray-200 underline"
+            >
+              Privacy
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowPolicy("cookie")}
+              className="hover:text-gray-200 underline"
+            >
+              Cookie Policy
+            </button>
           </div>
           <div className="flex gap-6 text-3xl">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="opacity-50 hover:text-blue-400 hover:opacity-100">
@@ -52,6 +70,8 @@ const Footer: React.FC = () => {
       </div>  
 
       </div>
+
+
       
 
     </footer>
