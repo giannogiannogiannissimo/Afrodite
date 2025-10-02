@@ -14,7 +14,8 @@ const App: React.FC = () => {
   const [showPolicy, setShowPolicy] = useState<"privacy" | "cookie" | null>(null);
 
   return (
-    <div>
+    <div className="relative">
+      
       <div className={`${showPolicy == null ? "" : "opacity-50 pointer-events-none"}`}>
         <Navbar />
         <main className="min-h-screen flex flex-col pt-32 bg-[url('@/assets/backgrounds/sfondo.png')] bg-repeat">
@@ -37,7 +38,7 @@ const App: React.FC = () => {
             >
               {/* Bottone chiudi */}
               <button
-                className="absolute top-3 right-3 flex items-center justify-center w-8 h-8 text-gray-500 hover:text-gray-800 hover:bg-gray-200 p-2 hover:rounded-full"
+                className="absolute top-3 right-3 flex items-center justify-center w-8 font-bold h-8 text-black hover:text-black hover:bg-gray-200 p-2 hover:rounded-full"
                 onClick={() => setShowPolicy(null)}
               >
                 ✕
@@ -47,7 +48,7 @@ const App: React.FC = () => {
                 {showPolicy === "privacy" ? "Privacy Policy" : "Cookie Policy"}
               </h2>
 
-              <div className="space-y-3 text-xl">
+              <div className="space-y-3 text-xl text-tema">
                 {showPolicy === "privacy" ? (
                   <>
                     <p>
