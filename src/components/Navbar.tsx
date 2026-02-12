@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, scroller } from "react-scroll";
 import logoNegativo from "@/assets/logos/NEGATIVO -ORIZZONTALE.png";
 
 const Navbar: React.FC = () => {
@@ -9,7 +9,8 @@ const Navbar: React.FC = () => {
     { to: "home", label: "Home" },
     
     { to: "about", label: "Chi siamo" },
-    { to: "radiofrequenza", label: "Radiofrequenza" },
+    { to: "medicinaEstetica", label: "Medicina estetica" },
+    { to: "radiofrequenza", label: "Tecniche" },
     { to: "donna", label: "Patologie" },
     { to: "contact", label: "Contatti" },
   ];
@@ -27,7 +28,7 @@ const Navbar: React.FC = () => {
             <img
               src={logoNegativo}
               alt="Afrodite negativo"
-              className="h-24 md:h-32 w-auto animate-entrata-fade duration-[1500ms] transition-all"
+              className="h-20 w-auto animate-entrata-fade duration-[1500ms] transition-all"
             />
           </a>
 
@@ -55,7 +56,7 @@ const Navbar: React.FC = () => {
 
           {/* Bottone Mobile */}
           <button
-            className="relative w-10 h-8 navbar-tablet:hidden flex flex-col justify-center items-center group"
+            className="relative w-10 h-8 navbar-tablet:hidden flex flex-col justify-center items-center group cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -85,14 +86,28 @@ const Navbar: React.FC = () => {
       {/* Menu Mobile */}
       <ul
         className={`
-          fixed top-40 md:top-36 left-0 w-full   /* 👈 si posiziona subito sotto la navbar (24 = h-24) */
-          navbar-tablet:hidden bg-tema-chiaro flex flex-col space-y-4 px-4 py-6 text-black font-lora
+          fixed top-36 md:top-24 left-0 w-full   /* 👈 si posiziona subito sotto la navbar (24 = h-24) */
+          navbar-tablet:hidden bg-tema-chiaro flex flex-col space-y-2 px-4 py-6 text-black font-lora
           overflow-hidden transition-all duration-300 ease-in-out z-40
-          ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
+          ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"}
         `}
       >
         {menuItems.map((item) => (
-          <li key={item.to}>
+          <li
+            key={item.to}
+            className="font-semibold hover:text-tema-scuro cursor-pointer hover:bg-white transition-colors duration-300 rounded-2xl px-4"
+            onClick={() => {
+              // chiudi menu
+              setIsOpen(false);
+
+              // scroll verso il checkpoint
+              scroller.scrollTo(item.to, {
+                duration: 1000,
+                smooth: false,
+                offset: -80,
+              });
+            }}
+          >
             <ScrollLink
               to={item.to}
               smooth={false}
@@ -100,7 +115,6 @@ const Navbar: React.FC = () => {
               offset={-80}
               spy={true}
               activeClass="active"
-              className="hover:text-white transition-colors duration-300 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               {item.label}

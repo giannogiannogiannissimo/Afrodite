@@ -24,32 +24,21 @@ const { ref, isVisible } = useFadeIn();
         />
       </div>
 
+
       {/* Sopra Sinistra*/}
-      <div className={`hidden col-start-1 row-start-1 hero-tablet:flex flex-col items-center justify-self-center relative mr-6 h-full justify-end opacity-0 transition-all animate-fadeIn ${isVisible ? "opacity-100" : ""}`}
+      <div className={`pb-4 hidden col-start-1 row-start-1 hero-tablet:flex flex-col items-center justify-self-center relative mr-6 h-full justify-end opacity-0 transition-all animate-fadeIn ${isVisible ? "opacity-100" : ""}`}
        style={{
             transitionDelay: `${1 * DELAY_STEP}ms`,
             transitionDuration: `${FADE_DURATION}ms`,
           }}>
         <div className="h-16 w-px bg-tema-primario origin-bottom scale-y-0 animate-grow"/>
-        <h3 className="text-5xl font-avigea font-bold text-tema-primario mt-2">
-          Benessere
-        </h3>
-        <p className="text-3xl font-lora max-w-xs text-tema-primario text-center">
-          Promozione di uno stato di salute ottimale attraverso trattamenti speicifici.
-        </p>
-        {/* Riga obliqua */}
-        {/*<span
-          
-          className={`
-            absolute -bottom-24 -right-72
-            h-96 w-[2px] bg-tema-primario
-            origin-bottom-right -rotate-80
-            transition-all delay-300 duration-500
-            ${isVisible ? "scale-y-100" : "scale-y-0"}
-          `}
-
-        />*/}
-      </div>
+          <h3 className="text-5xl font-avigea font-bold text-tema-primario mt-2">
+            Benessere
+          </h3>
+          <p className="text-3xl font-lora max-w-xs text-tema-primario text-center">
+            Promozione di uno stato di salute ottimale attraverso trattamenti specifici.
+          </p>     
+        </div>
 
       {/* Sopra */}
       <div className={`col-start-2 row-start-1 hidden hero-tablet:flex flex-col self-start items-center relative opacity-0 transition-all  animate-fadeIn ${isVisible ? "opacity-100" : ""}`}
@@ -223,7 +212,7 @@ const { ref, isVisible } = useFadeIn();
           `}
         /> */}
       </div>
-      <div className="bg-white rounded-2xl gap-y-10 p-10 hero-tablet:hidden">
+      <div className="mt-4 bg-white rounded-2xl gap-y-10 p-10 hero-tablet:hidden">
         {/* Responsive Benessere */}
         <div
           className={`flex flex-col items-center text-center opacity-0 transition-all animate-fadeIn hero-tablet:hidden ${

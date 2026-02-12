@@ -25,6 +25,8 @@
 
 
 
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
@@ -40,14 +42,19 @@
     --font-montserrat: Montserrat, "serif";
     --breakpoint-navbar-tablet:1350px;
     --breakpoint-navbar-pc:1610px;
+    --breakpoint-home-tablet:1350px;
+    --breakpoint-home-pc:1610px;
     --breakpoint-about-us-tablet:1350px;
     --breakpoint-about-us-normale:800px;
     --breakpoint-hero-tablet: 1190px;
     --breakpoint-hero-pc: 1500px;
+    --breakpoint-medicinaEstetica-tablet:800px;
+    --breakpoint-medicinaEstetica-pc:1610px;
     --breakpoint-radiofrequenza-tablet: 1190px;
     --breakpoint-radiofrequenza-pc: 1500px;
-    --breakpoint-donna-tablet: 1028px;
+    --breakpoint-donna-tablet: 800px;
     --breakpoint-contact-tablet: 1028px;
+    --breakpoint-footer-tablet: 1028px;
 
     @keyframes entrata-fade {
     from { opacity: 0; }
