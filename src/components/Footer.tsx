@@ -17,11 +17,15 @@ const Footer: React.FC = () => {
         {/* Sezione contatti */}
         <div className="text-left space-y-2 z-10 m-4 pt-7">
           <p className="font-semibold">Contatti</p>
-          <p>📍 Via12312312312312, Latina</p>
-          <p>📞 0234234233 24321423</p>
-          <p>📱 <a href="tel:+393397654321" className="hover:underline">341222121</a></p>
-          <p>📱 <a href="tel:+393397654321" className="hover:underline">312315123q4321</a></p>
-          <p>✉️ <a href="mailto:mail.com" className="hover:underline">mail.com</a></p>
+          <p>📍<a
+                    href={`https://www.google.com/maps?q=${encodeURIComponent("Viale XXI Aprile 39, Latina")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  > Viale XXI Aprile 39, Latina</a></p>
+          <p>📞 <a href="tel:+390773280968" className="hover:underline">0773280968</a></p>
+          <p>📱 <a href="tel:+393925040010" className="hover:underline">3925040010</a></p>
+          <p>✉️ <a href="mailto:cortellessaf6@gmail.com" className="hover:underline">cortellessaf6@gmail.com</a></p>
         </div>
         {/* Sezione orari */}
         <div className="text-left space-y-2 z-10 m-4 pt-7">
