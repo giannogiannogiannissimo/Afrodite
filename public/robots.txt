@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://centroafroditebenessere.it/sitemap.xml
+Sitemap: https://associazioneafroditebenessere.it/sitemap.xml

@@ -23,10 +23,13 @@ const Home: React.FC = () => {
         />
         <span className="text-3xl font-avigea sm:text-4xl md:text-5xl font-bold text-tema-scuro animate-entrata-fade duration-[1500ms] transition-all delay-[1500ms] opacity-0">?</span>
       </div>
-      <p className="text-xl sm:text-3xl md:text-4xl mt-10 text-tema-primario max-w-2xl mx-auto font-lora animate-entrata-fade duration-[1500ms] transition-all delay-[2000ms] opacity-0">
+      {/*<p className="text-xl sm:text-3xl md:text-4xl mt-10 text-tema-primario max-w-2xl mx-auto font-lora animate-entrata-fade duration-[1500ms] transition-all delay-[2000ms] opacity-0">
           Con la radiofrequenza e altri <span className="font-semibold">trattamenti personalizzati</span>, ogni percorso terapeutico è studiato sulle tue esigenze, con <span className="font-semibold">tecnologie all'avanguardia</span> e un approccio professionale e umano. 
       </p>
-      
+     */}
+      <p className="text-xl sm:text-3xl md:text-4xl mt-10 text-tema-primario max-w-2xl mx-auto font-lora animate-entrata-fade duration-[1500ms] transition-all delay-[2000ms] opacity-0">
+      Centro medico polispecialistico di <span className="font-semibold">medicina rigenerativa</span>, dedicato alla <span className="font-semibold">prevenzione e benessere</span> dell'uomo e della donna, con approccio clinico biointegrato e olistico. Ogni percorso diagnostico teraputico è studiato per le tue esigenze, <span className="font-semibold">con tecnologie all'avanguardia e un approccio professionale e umano.</span>
+      </p>
     </section>
   );
 };

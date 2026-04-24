@@ -20,6 +20,9 @@ const MedicinaEstetica: React.FC = () => {
         <h2 className={`text-3xl font-lora duration-500 transition-all delay-500 opacity-0 sm:text-4xl md:text-5xl font-bold text-tema-scuro mb-4 ${ isVisible ? "opacity-100" : "opacity-0"}`}>
             Medicina estetica:  
         </h2>
+	<h3 className={`text-2xl font-lora duration-500 transition-all delay-1000 opacity-0 sm:text-3xl md:text-4xl font-bold text-tema-scuro mb-4 ${ isVisible ? "opacity-100" : "opacity-0"}`}>
+		Medicina preventiva, predittiva, rigenerativa.
+	</h3>
 
         {/* Versione normale */}
         <div className={`hidden medicinaEstetica-tablet:flex medicinaEstetica-tablet:flex-col medicinaEstetica-tablet:gap-10 medicinaEstetica-tablet:justify-between medicinaEstetica-tablet:mt-20 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-1/2"}`}>

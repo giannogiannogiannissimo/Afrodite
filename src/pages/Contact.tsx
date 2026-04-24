@@ -56,25 +56,25 @@ const Contact: React.FC = () => {
               <li className="flex items-start">
                 <MapPin className="text-tema-primario h-6 w-6 mr-3" />
                 <a
-                  href={`https://www.google.com/maps?q=${encodeURIComponent("Viale sdadasdad Lastina")}`}
+                  href={`https://www.google.com/maps?q=${encodeURIComponent("Viale XXI Aprile 39, Latina")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline hover:text-tema-primario transition-colors"
                 >
-                  Viale sdadasdad Lastina
+                  Viale XXI Aprile 39, Latina
                 </a>
               </li>
               <li className="flex items-start">
                 <Phone className="text-tema-primario h-6 w-6 mr-3" />
-                <a href="tel:+393397654321" className="hover:underline">312315123q4321</a>
+                <a href="tel:+390773280968" className="hover:underline">+390773280968</a>
               </li>
               <li className="flex items-start">
                 <Smartphone className="text-tema-primario h-6 w-6 mr-3" />
-                <a href="tel:+393397654321" className="hover:underline">312315123q4321</a>
+                <a href="tel:+393925040010" className="hover:underline">+393925040010</a>
               </li>
               <li className="flex items-start">
                 <Mail className="text-tema-primario h-6 w-6 mr-3" />
-                <a href="mailto:mail.com" className="hover:underline">mail.com</a>
+                <a href="mailto:cortellessaf6@gmail.com" className="hover:underline">cortellessaf6@gmail.com</a>
               </li>
             </ul>
             {/* Social Icons */}
@@ -194,25 +194,25 @@ const Contact: React.FC = () => {
                 <li className="flex items-start">
                   <MapPin className="text-tema-primario h-6 w-6 mr-3" />
                   <a
-                    href={`https://www.google.com/maps?q=${encodeURIComponent("Viale sdadasdad Lastina")}`}
+                    href={`https://www.google.com/maps?q=${encodeURIComponent("Viale XXI Aprile 39, Latina")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline hover:text-tema-primario transition-colors"
                   >
-                    Viale sdadasdad Lastina
+                    Viale XXI Aprile 39, Latina
                   </a>
                 </li>
                 <li className="flex items-start">
                   <Phone className="text-tema-primario h-6 w-6 mr-3" />
-                  <a href="tel:+393397654321" className="hover:underline">312315123q4321</a>
+                  <a href="tel:+390773280968" className="hover:underline">+390773280968</a>
                 </li>
                 <li className="flex items-start">
                   <Smartphone className="text-tema-primario h-6 w-6 mr-3" />
-                  <a href="tel:+393397654321" className="hover:underline">312315123q4321</a>
+                  <a href="tel:+393925040010" className="hover:underline">+393925040010</a>
                 </li>
                 <li className="flex items-start">
                   <Mail className="text-tema-primario h-6 w-6 mr-3" />
-                  <a href="mailto:mail.com" className="hover:underline">mail.com</a>
+                  <a href="mailto:cortellessaf6@gmail.com" className="hover:underline">cortellessaf6@gmail.com</a>
                 </li>
               </ul>
  

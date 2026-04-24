@@ -18,10 +18,10 @@ const Radiofrequenza: React.FC = () => {
         <div className="hidden radiofrequenza-tablet:flex radiofrequenza-tablet:flex-row items-stretch gap-x-10 pb-4">
             <div className="flex flex-col p-10 bg-white mx-auto rounded-2xl shadow-2xl">
                 <h2 className="text-3xl font-lora animate-entrata-fade duration-[1000ms] transition-all delay-1000 opacity-0 sm:text-4xl md:text-5xl font-bold text-tema-scuro mb-4">
-                    La Radiofrequenza:  
+                    Benessere intimo femminile  
                 </h2>
                 <h3 className="text-2xl font-lora font-normal animate-entrata-fade duration-[1000ms] transition-all delay-1000 opacity-0 sm:text-3xl md:text-4xl text-tema-scuro mb-4">
-                    una soluzione innovativa
+                    Approccio clinico terapeutico integrato
                 </h3>
             
                 <p className="text-xl sm:text-3xl md:text-4xl mt-10 text-tema-primario max-w-2xl mx-auto font-lora animate-entrata-fade duration-[1000ms] transition-all delay-[2000ms] opacity-0">
@@ -75,7 +75,7 @@ const Radiofrequenza: React.FC = () => {
                             alt="Giglio"
                             className={`h-10 w-auto`}
                         />
-                        <h2 className="self-end ml-5 text-tema-scuro text-3xl font-avigea">Dopo <span className="text-tema-chiaro">3</span> sessioni:</h2>
+                        <h2 className="self-end ml-5 text-tema-scuro text-3xl font-avigea">Risultati possibili dopo <span className="text-tema-chiaro">3</span> sessioni:</h2>
                     </div>
                     <div className="flex flex-row">
                         <div className="flex mt-4 self-start">
@@ -147,7 +147,7 @@ const Radiofrequenza: React.FC = () => {
                             alt="Giglio"
                             className={`h-10 w-auto animate-entrata-fade duration-2000 opacity-0 ${ isVisible ? "opacity-100" : ""}`}
                         />
-                        <h2 className="self-end ml-5 text-tema-scuro text-3xl font-avigea">Dopo <span className="text-tema-chiaro">8</span> sessioni:</h2>
+                        <h2 className="self-end ml-5 text-tema-scuro text-3xl font-avigea">Risultati possibili dopo <span className="text-tema-chiaro">8</span> sessioni:</h2>
                     </div>
                     <div className="flex flex-row">
                         <div className="flex mt-4 self-start">
@@ -208,10 +208,10 @@ const Radiofrequenza: React.FC = () => {
         <div className="flex flex-col space-y-6 mt-10 radiofrequenza-tablet:hidden">
             <div className="flex flex-col p-10 w-full bg-white mx-auto rounded-2xl shadow-2xl">
                 <h2 className="text-3xl font-lora animate-entrata-fade duration-[1000ms] transition-all delay-1000 opacity-0 sm:text-4xl md:text-5xl font-bold text-tema-scuro mb-4">
-                    La Radiofrequenza:  
+                    Benessere intimo femminile  
                 </h2>
                 <h3 className="text-2xl font-lora font-normal animate-entrata-fade duration-[1000ms] transition-all delay-1000 opacity-0 sm:text-3xl md:text-4xl text-tema-scuro mb-4">
-                    una soluzione innovativa
+                    Approccio clinico terapeutico integrato
                 </h3>
             
                 <p className="text-xl sm:text-3xl md:text-4xl mt-10 text-tema-primario max-w-2xl mx-auto font-lora animate-entrata-fade duration-[1000ms] transition-all delay-[2000ms] opacity-0">
@@ -265,7 +265,7 @@ const Radiofrequenza: React.FC = () => {
                 <div className="flex">
                 <img src={giglio} alt="Giglio" className="h-10 w-auto" />
                 <h2 className="self-end ml-5 text-tema-scuro text-2xl sm:text-3xl font-avigea">
-                    Dopo <span className="text-tema-chiaro">3</span> sessioni:
+                    Risultati possibili dopo <span className="text-tema-chiaro">3</span> sessioni:
                 </h2>
                 </div>
                 {/* blocco % */}
@@ -329,7 +329,7 @@ const Radiofrequenza: React.FC = () => {
                 <div className="flex">
                 <img src={giglio} alt="Giglio" className="h-10 w-auto" />
                 <h2 className="self-end ml-5 text-tema-scuro text-2xl sm:text-3xl font-avigea">
-                    Dopo <span className="text-tema-chiaro">8</span> sessioni:
+                    Risultati possibili dopo <span className="text-tema-chiaro">8</span> sessioni:
                 </h2>
                 </div>
                 {/* blocco % */}

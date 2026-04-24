@@ -193,6 +193,7 @@ const Donna: React.FC = () => {
                         />
                         <span className="font-lora text-tema-primario text-xl">Esame trans vaginale</span>
                     </li>
+                
                     <li className={`flex items-center text-md transition-all space-x-4 font-semibold fade-in ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1/2"}`} 
                             style={{
                                     transitionDelay: `${(3 * DELAY_STEP) +  3000}ms`,
@@ -203,9 +204,9 @@ const Donna: React.FC = () => {
                             alt="Giglio"
                             className={`h-6 w-auto`}
                         />
-                        <span className="font-lora text-tema-primario text-xl">Prezzo: ...</span>
+                        <span className="font-lora text-tema-primario text-xl">Ringiovanimento vaginale</span>
                     </li>
-                </div>
+		</div>
             </div>
             <div className={`relative flex flex-row space-x-4 items-stretch h-[260px] justify-end transition-all delay-[3000ms] duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "overflow-hidden opacity-0 -translate-x-1/2"}`}>           
                 <div className="flex flex-col space-y-4 p-4">
@@ -257,18 +258,6 @@ const Donna: React.FC = () => {
                         />
                         <span className="font-lora text-tema-primario text-xl">Eco pubica/trans vaginale</span>
                     </li>
-                    <li className={`flex items-center text-md transition-all space-x-4 font-semibold fade-in ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1/2"}`} 
-                            style={{
-                                    transitionDelay: `${(5 * DELAY_STEP) +  4000}ms`,
-                                    transitionDuration: `${FADE_DURATION}ms`,
-                                }}>
-                        <img
-                            src={giglio}
-                            alt="Giglio"
-                            className={`h-6 w-auto`}
-                        />
-                        <span className="font-lora text-tema-primario text-xl">Prezzo:...</span>
-                    </li>
                 </div>
                 <img
                     src={donnaCard2}
@@ -319,18 +308,6 @@ const Donna: React.FC = () => {
                             className={`h-6 w-auto`}
                         />
                         <span className="font-lora text-tema-primario text-xl">Esame ecografico addome</span>
-                    </li>
-                    <li className={`flex items-center text-md transition-all space-x-4 font-semibold fade-in ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1/2"}`} 
-                            style={{
-                                    transitionDelay: `${(3 * DELAY_STEP) +  5000}ms`,
-                                    transitionDuration: `${FADE_DURATION}ms`,
-                                }}>
-                        <img
-                            src={giglio}
-                            alt="Giglio"
-                            className={`h-6 w-auto`}
-                        />
-                        <span className="font-lora text-tema-primario text-xl">Prezzo: ...</span>
                     </li>
                 </div>
             </div>

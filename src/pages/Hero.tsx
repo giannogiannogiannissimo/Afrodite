@@ -73,10 +73,10 @@ const { ref, isVisible } = useFadeIn();
           }}>
         <div className="h-16 w-px bg-tema-primario origin-bottom scale-y-0" />
         <h3 className="text-5xl font-avigea font-bold text-tema-primario mt-2">
-          Innovazione
+          Medicina rigenerativa
         </h3>
         <p className="text-3xl font-lora max-w-xs text-tema-primario text-center animate-fadeIn delay-700">
-          Utilizzo di tecnologie avanzate come la radiofrequenza per trattamenti efficaci e moderni.
+          Ripristino e stimolazione dei normali processi fisiologici del corpo.
         </p>
         {/* Riga obliqua */}
         {/* <span
@@ -263,10 +263,10 @@ const { ref, isVisible } = useFadeIn();
         >
           
           <h3 className="text-3xl sm:text-4xl font-avigea font-bold text-tema-primario mt-2">
-            Innovazione
+            Medicina rigenerativa
           </h3>
           <p className="text-xl sm:text-2xl font-lora max-w-md text-tema-primario">
-            Utilizzo di tecnologie avanzate come la radiofrequenza per trattamenti efficaci e moderni.
+            Ripristino e stimolazione dei normali processi fisiologici del corpo.
           </p>
         </div>
 
